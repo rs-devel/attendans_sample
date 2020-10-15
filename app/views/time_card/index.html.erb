@@ -1,2 +1,28 @@
-<h1>本日はです</h1>
-<%= button_to '出勤',{action: 'time_card_in'}, method: :post  %>
+<body>
+    <section class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <button type="button" class="btn btn-primary btn-circle" id="js-button-in">出勤</button>
+                </div>
+                <div class="col-xs-5">
+                    <button type="button" class="btn btn-primary btn-circle" id="js-button-out">退勤</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">日付</th>
+                    <th scope="col">カイシジコク</th>
+                    <th scope="col">おわりジコク</th>
+                    <th scope="col">労働時間</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+    </section>
+</body>
