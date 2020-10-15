@@ -1,0 +1,10 @@
+.l-container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: $container-max-width;
+    min-width: $container-min-width;
+    background-color: #fff;
+    overflow: auto;
+}

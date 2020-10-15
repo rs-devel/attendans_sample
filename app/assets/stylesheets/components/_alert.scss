@@ -1,0 +1,8 @@
+.c-alert {
+
+    &-text {
+        color: #ff0000;
+        @include font-size(14);
+    }
+
+}

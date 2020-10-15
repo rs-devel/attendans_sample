@@ -1,0 +1,11 @@
+$step: 5;
+
+@for $i from 0 through 80 {
+    .u-w-#{$i * $step} {
+        width: #{$i * $step}px !important;
+    }
+
+    .u-h-#{$i * $step} {
+        max-height: #{$i * $step}px !important;
+    }
+}

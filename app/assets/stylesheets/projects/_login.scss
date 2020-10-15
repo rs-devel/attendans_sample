@@ -1,0 +1,26 @@
+.p-login {
+    background-color: $main-color;
+    height: auto;
+    min-height: 100%;
+    text-align: center;
+    padding-top: 50px;
+
+    &__title__text {
+        color: #fff;
+        @include font-size(13);
+        line-height: 2.5;
+    }
+
+    &__form {
+        background-color: #fff;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 15px;
+        margin: 30px auto;
+        padding: 60px 35px;
+    }
+
+    &__logo {
+        padding-top: 40px;
+    }
+}

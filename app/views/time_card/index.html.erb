@@ -1,28 +1,38 @@
 <body>
-    <section class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-5">
-                    <button type="button" class="btn btn-primary btn-circle" id="js-button-in">出勤</button>
-                </div>
-                <div class="col-xs-5">
-                    <button type="button" class="btn btn-primary btn-circle" id="js-button-out">退勤</button>
+    <div class="l-container">
+        <div class="l-main">
+            <div class="container">
+                <div class="p-attend">
+                    <div class="p-attend__content">
+                        <div class="p-attend__start">
+                            <div id="js-button-in" class="p-attend__start__btn">出勤</div>
+                        </div>
+                        <div class="p-attend__end">
+                            <div d="js-button-out" class="p-attend__end__btn disabled">退勤</div>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <th class="text-center">日付</th>
+                                <th class="text-center">出勤時間</th>
+                                <th class="text-center">退勤時間</th>
+                                <th class="text-center">勤務時間</th>
+                                <th class="text-center">詳細</th>
+                            </thead>
+                            <tbody id="testtb">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">日付</th>
-                    <th scope="col">カイシジコク</th>
-                    <th scope="col">おわりジコク</th>
-                    <th scope="col">労働時間</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            </table>
-    </section>
+    </div>
 </body>

@@ -1,0 +1,30 @@
+.p-header {
+    background-image: url(../../images/bg_header.png);
+    background-repeat: repeat-x;
+    background-size: auto;
+    height: $header-height;
+    padding-top: 10px;
+    position: relative;
+
+    &__name {
+        color: #fff;
+        @include font-size(13);
+        position: absolute;
+        left: 20px;
+    }
+
+    &__time {
+        color: #fff;
+        @include font-size(13);
+        font-weight: 300;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+}

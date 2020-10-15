@@ -1,0 +1,28 @@
+// color
+$main-color: #fab419 !default;
+$alert-color: #ff0000 !default;
+$info-color: #90e3ff !default;
+
+// layout
+$screen-max-width: 767px;
+$screen-min-width: 320px;
+
+$header-max-width: $screen-max-width;
+$header-min-width: $screen-min-width;
+
+$container-max-width: $screen-max-width;
+$container-min-width: $screen-min-width;
+
+// base
+$body-bg: #848484;
+$font-size-default: 16;
+
+// header
+$header-height: 46px;
+$header-base-color: #bd8437;
+$header-padding-x: 10px;
+
+// main
+$main-padding-top: 10px;
+$main-padding-bottom: 10px;
+$main-padding-x: 10px;

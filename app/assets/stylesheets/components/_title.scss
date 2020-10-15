@@ -1,0 +1,26 @@
+.c-title {
+
+    &-headline {
+        @include font-size(16);
+        font-weight: 600;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            background-color: $main-color;
+            line-height: 1.4;
+            display: inline-block;
+            width: calc(100% + 11px);
+            height: 8px;
+            position: absolute;
+            bottom: 1px;
+            left: -5px;
+            z-index: -1;
+            border-radius: 5px;
+        }
+    }
+
+}
