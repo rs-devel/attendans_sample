@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    height: 100%;
+    font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic Medium','Yu Gothic',YuGothic,Meiryo,sans-serif;
+    background-color: $body-bg;
+}

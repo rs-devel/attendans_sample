@@ -1,0 +1,25 @@
+.c-btn {
+    cursor: pointer;
+    background-color: $main-color;
+    color: #fff;
+    border-radius: 30px;
+    padding: 9px 45px;
+    border: 0;
+    @include font-size(14);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba($main-color, 0.2);
+        background-color: darken($main-color, 3%);
+    }
+
+    &:hover {
+        background-color: darken($main-color, 3%);
+    }
+
+    &.text-black {
+        color: #000;
+    }
+
+}

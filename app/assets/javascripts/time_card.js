@@ -5,13 +5,32 @@ const getajax = (() => {
         method : "GET",
     }).then(function(response){
         if (response.ok) {
-            appendHtml(response.json())
+            return response.json();
+        } else {
+            return 'error'
         }
-    });
+    }).then(function(resjson){
+        appendHtml(resjson)
+    });;
 })
 
 const appendHtml = ((resjson) => {
+    const tbl = document.getElementById('testtb');
     console.log(resjson);
+
+    resjson.forEach(element => {
+        addElm = []
+        addElm.push(`<tr>`);
+        addElm.push(`<td class="text-center">${element.start_time}</td>`);
+        addElm.push(`<td class="text-center"></td>`);
+        addElm.push(`<td class="text-center"></td>`);
+        addElm.push(`<td class="text-center"></td>`);
+        addElm.push(`<td class="text-center">0分</td>`);
+        addElm.push(`</tr>`);
+        html = addElm.join('')
+
+        tbl.insertAdjacentHTML('beforeend', html);
+    });
 })
 
 const sendajax = (() => {
@@ -21,7 +40,7 @@ const sendajax = (() => {
         method : "POST",
     }).then(function(response){
         if (response.ok) {
-            console.log(response.url); 
+            console.log(response.url);
         }
     });
 })
@@ -40,4 +59,3 @@ const main = (() => {
 document.addEventListener('DOMContentLoaded', (event) => {
     main()
 });
-

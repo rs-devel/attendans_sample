@@ -1,0 +1,31 @@
+$step: 2;
+
+@for $i from 0 through 20 {
+    .u-fs-#{$i * $step} {
+        @include font-size($i * $step);
+    }
+}
+
+.u-whs-nw {
+    white-space: nowrap !important;
+}
+
+.u-ta-c {
+    text-align: center !important;
+}
+
+.u-ta-r {
+    text-align: right !important;
+}
+
+.u-ta-l {
+    text-align: left !important;
+}
+
+.u-c-off {
+    color: #ccc !important;
+}
+
+.u-c-feedback {
+    color: #d9534f !important;
+}

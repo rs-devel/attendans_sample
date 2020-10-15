@@ -1,0 +1,48 @@
+.c-icon {
+
+    &-bell {
+        background-image: url(../../images/icon_bell.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        position: relative;
+
+        &.badge:after{
+            content:"";
+            position: absolute;
+            background-color: $alert-color;
+            height: 8px;
+            width: 8px;
+            top: 2px;
+            right: -1px;
+            border-radius: 50%;
+        }
+    }
+
+    &-arrow-l {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 10px 7px 0;
+        border-color: transparent #000000 transparent transparent;
+    }
+
+    &-arrow-r {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 0 7px 10px;
+        border-color: transparent transparent transparent #000000;
+    }
+
+    &-edit {
+        background-image: url(../../images/icon_edit.png);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 21px;
+        display: inline-block;
+    }
+
+}
